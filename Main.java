@@ -10,8 +10,14 @@ public class Main {
         System.out.println("Welcome to CS112!");
 
         System.out.println("Do I like reading?\n" + Main.checksHobby("reading"));
-        
         Main.printHobbies();
+
+        Student student1 = new Student("W7404001", null, 2, 0);
+
+        student1.setMajor("Computer Science");
+        student1.setGpa(3.7);
+
+        System.out.println("Here is my student information: "+ student1);
     }
 
     public static void printHobbies() {
